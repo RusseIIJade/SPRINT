@@ -1,0 +1,205 @@
+/* The Big Bang Logo's design */
+nav .logo{
+	display: flex;
+	padding: 1px 0%;	
+	height: 100%;
+	float: left;
+}
+
+/* When we hover over the logo it turns into a pointing hand*/
+.logo{
+	cursor: pointer;
+}
+
+/* Positions of our Navigation Links*/
+nav ul{
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+/* Design of the navigation links*/
+nav ul li a{
+	line-height: 50px;
+	color: #ffffff;
+	padding: 26px 10px;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* Navigation designs*/
+nav {
+	font: 800 32px 'Calibri light', sans-serif;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	padding: 10px 90px;	
+	box-sizing: border-box;
+	background: rgba(0,0,0,0.6);
+
+}
+
+body{
+	margin: 10;
+
+	/* height of the Form vertically*/
+	height: 100vh; 					
+	font-size: 16px;
+
+	/* These three lines set the form horizontally and vertically*/
+	display: flex;					
+	align-items: center;			
+	justify-content: center;
+
+	/*The background Image of our webpage*/
+	background: url(./logo1.png);	
+	background-size: cover;
+}
+
+.container {
+    width: 400px;
+    max-width: 400px;
+    margin: 16px;
+    padding: 32px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+
+    /* make the edge of the form rounder*/
+    border-radius: 50px;	
+
+    /*Pastel Black*/			
+    background: #1D1C1A;										
+}
+	
+.container,
+.form__input,
+.form__button {
+	font: 600 16px 'Calibri light', sans-serif;
+}
+
+/*Makes the Sign up form visibe by hiding the Login */
+.form--disabled {				
+	display: none;
+}
+
+/*removes extra margin of h1*/
+.form > *:first-child { 	
+	margin-top: 0;
+}
+
+/*removes extra margin of p*/
+.form > *:last-child {		
+	margin-bottom: 0;
+}
+
+/*centers Login name of Form*/
+.form__tile{				
+	margin-bottom: 32px;
+	text-align: center;
+	color:  #ffffff;
+}
+
+/*Gives a space between the placeholders*/
+.form__input--group {		
+	margin-bottom: 20px;
+}
+
+/*Modifies the placeholder	*/
+.form__input {											
+	display: block;
+	width: 100%;
+	padding: 14px;
+	box-sizing: border-box;
+
+	/* make the edge of the form rounder*/
+	border-radius: 50px;								
+	border: 2px solid #dddddd;
+	outline: none;
+
+	/*Gives color to the placeholders*/
+	background: #eeeeee;	
+
+	/*Gives transition for the placeholder from gray to white*/						
+	transition: background 0.2s, border-color 0.2s;		
+}
+
+/*connected to the .form__input*/
+.form__input:focus {				
+
+	/* Orange */
+	border-color:  #ffa500; 					
+	background: #ffffff;
+}
+
+/*colors the placeholders red when its an invalid*/
+.form__input--invalid {  		
+	/* Persian Red */		
+	color: #cc3333;			
+	/* Persian Red */		
+	border-color: #cc3333;			
+}
+
+.form__input-invalid-notice {
+	margin-top: 8px;
+	font-size: 16px;
+	/* Persian Red */
+	color: #cc3333;					
+}
+
+
+.form__notice {
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+/*Assigns color when our Login is a success*/
+.form__notice--success {
+	/* Green */			
+	color: #4bb544;					
+}
+
+/*Assigns color when our Login is invalid*/
+.form__notice--invalid {	
+	/* Persian Red */			
+	color: #cc3333;					
+}
+
+/* Designs the buttons */
+.form__button {						
+    width: 100%;
+    padding: 18px 36px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    border: none;
+
+    /* make the edge of the form rounder*/
+    border-radius: 50px;			
+    outline: none;
+    cursor: pointer;
+
+    /* Orange */
+    background: #ffa500; 			
+}
+	
+/* Changes color when the cursor hovers over it*/	
+.form__button:hover {		
+	/* Darker Orange */	
+	background: #ff8c00;  			
+}
+
+/* Makes the button smaller when clicked */
+.form__button:active {				
+	transform: scale(0.92);
+}
+
+.form__text {						
+	text-align: center;
+}
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Makes the Website responsive --> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<!-- Tite of the Webpage--> 
+	<title>Enter Big Bang</title>
+	<link rel="shortcut icon" href="/assets/favicon.ico">
+	<link rel="stylesheet" href="../CSS/design.css">
+	<!-- Link colors-->		
+	<style>	
+	a:visited {
+	  color: #ffffff; background-color: transparent; text-decoration: none;
+	}
+	a:hover {
+	  color: #ffa500; background-color: transparent; text-decoration: underline;
+	}
+	a:active {color: #ffff00; background-color: transparent; text-decoration: underline;
+	}
+	</style>
+</head>
+<body>
+<!-- Here goes the navigation of the website--> 
+	<nav>
+		<img class="logo" src="logo.png" alt="logo"> 
+		<ul>
+			<li><a href="#">The Big Bang Universe</a></li>
+			<li><a href="#">Related</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Forum</a></li>
+			<li><a href="#">Login/Sign up</a></li>
+		</ul>
+	</nav>
+	<!-- loops The Big Bang Theory Intro of the Final Episode--> 
+	<audio autoplay loop>
+		<source src="song.mp3">
+	</audio>
+	<!-- This dictates what happens under the navigation links--> 
+	<div class="container"> 
+		<!-- This will be the Login form--> 
+		<form class="form" id="login">
+			<!-- This dictates what happens under the navigation links--> 
+			<h1 class="form__tile">Login</h1>
+			<!-- Shows the invalid error if Your Username annd Password is wrong-->
+			<div class="form__notice form__notice--invalid"></div>
+			<div class="form__input--group">
+				<!-- Email Form-->			
+				<input type="text"class="form__input" autofocus placeholder="Email" name="">
+				<!-- Shows the invalid if Your Email is wrong-->	
+				<div class="form__input-invalid-notice"></div>
+			</div>
+			<div class="form__input--group">
+				<!-- Password Form-->	
+				<input type="password"class="form__input" autofocus placeholder="Password" name="">
+				<!-- Shows the invalid if Your Password is wrong-->
+				<div class="form__input-invalid-notice"></div>
+			</div>
+			<!-- Click to Enter credentials-->
+			<button class="form__button" type="submit">Login</button>
+			<p class="form__text">
+			<!-- Click to create a new account-->
+				<a class="form__link" href="./" id="linkCreateAccount">Create a new Account</a>
+			</p>
+
+		</form>
+		<form class="form form--disabled" id="createAccount">
+			<h1 class="form__tile">Create Account</h1>
+			<div class="form__notice form__notice--invalid"></div>
+			<div class="form__input--group">
+				<input type="text" class="form__input" autofocus placeholder="Username" name="">
+				<div class="form__input-invalid-notice"></div>
+			</div>
+			<div class="form__input--group">
+				<input type="text"class="form__input" autofocus placeholder="Email" name="">
+				<div class="form__input-invalid-notice"></div>
+			</div>
+			<div class="form__input--group">
+				<input type="password" id="signupPassword" class="form__input" autofocus placeholder="Password" name="">
+				<div class="form__input-invalid-notice"></div>
+			</div>
+			<div class="form__input--group">
+				<input type="password"class="form__input" autofocus placeholder="Confirm Password" name="">
+				<div class="form__input-invalid-notice"></div>
+			</div>
+			<button class="form__button" type="submit">Sign up</button>
+			<p class="form__text">
+				<a class="form__link" href="./" id="linkLogin">Already have an Account? Login</a>
+			</p>
+		</form>
+	</div>
+	<script src="../JavaScript/func.js" type="text/javascript"></script>
+</body>
+<html>
