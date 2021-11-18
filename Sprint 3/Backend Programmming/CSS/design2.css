@@ -1,0 +1,66 @@
+/* The Big Bang Logo's design */
+nav .logo{
+	display: flex;
+	padding: 1px 0%;	
+	height: 100%;
+	float: left;
+}
+
+/* When we hover over the logo it turns into a pointing hand*/
+.logo{
+	cursor: pointer;
+}
+
+/* Positions of our Navigation Links*/
+nav ul{
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+/* Design of the navigation links*/
+nav ul li a{
+	line-height: 50px;
+	color: #ffffff;
+	padding: 26px 10px;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* Navigation designs*/
+nav {
+	font: 800 32px 'Calibri light', sans-serif;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	padding: 10px 90px;	
+	box-sizing: border-box;
+	background: rgba(0,0,0,0.6);
+
+}
+
+body{
+	margin: 10;
+
+	/* height of the Form vertically*/
+	height: 100vh; 					
+	font-size: 16px;
+
+	/* These three lines set the form horizontally and vertically*/
+	display: flex;					
+	align-items: center;			
+	justify-content: center;
+
+	/*The background Image of our webpage*/
+	background: url(./logo2.gif);	
+	background-size: cover;
+}
+
+
+
